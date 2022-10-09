@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="./css/websitestyle.css">
+</head>
+
+<body>
+    <header>
+        <nav id="nav">
+            <div id="logo"></div>
+            <input id="search" type="text" value="Search"></input>
+            <a href="login.html"><button id="login">Login</button></a>
+            <a href="cart.html"><img id="cart1" src="https://www.iconsdb.com/icons/download/white/cart-59-16.png">
+                <p id="cart2">My Cart</p>
+            </a>
+
+        </nav>
+    </header>
+
+    <main>
+        <button type="button" onclick="change()" id="mode" class="mode"><p id="mode p">Dark Mode</p></button>
+        <script>
+            function change() {
+                document.body.style.backgroundColor = 'rgba(14, 9, 10, 0.966)';
+                document.getElementById('nav').style.backgroundColor = 'rgba(77, 2, 14, 0.774)';
+                document.getElementById('search').style.backgroundColor = 'rgba(14, 12, 12, 0.692)';
+                document.getElementById('search').style.color = 'white';
+                document.getElementById('login').style.backgroundColor = 'rgba(14, 12, 12, 0.692)';
+                document.getElementById('login').style.color = 'white';
+                document.getElementById('cart2').style.color = 'white';
+                document.getElementById('container').style.backgroundColor = 'black';
+                document.getElementById('container').style.border = '5px solid rgba(77, 2, 14, 0.774)';
+                document.getElementById('content').style.backgroundColor = 'rgba(77, 2, 14, 0.774)';
+                document.getElementById('p').style.backgroundColor = 'rgba(77, 2, 14, 0.774)';
+                document.getElementById('q').style.backgroundColor = 'rgba(77, 2, 14, 0.774)';
+                document.getElementById('r').style.backgroundColor = 'rgba(77, 2, 14, 0.774)';
+                document.getElementById('s').style.backgroundColor = 'rgba(77, 2, 14, 0.774)';
+                document.getElementById('foot').style.backgroundColor = "rgba(77, 2, 14, 0.774)";
+                document.getElementById('mode').style.backgroundColor = "rgba(77, 2, 14, 0.774)";
+                document.getElementById('mode p').innerHTML = "Light Mode";
+            }
+        </script>
+        <div id="container" class="container">
+            <div class="slider">
+                <div class="images">
+                    <input type="radio" name="slide" id="img1" checked>
+                    <input type="radio" name="slide" id="img2">
+                    <input type="radio" name="slide" id="img3">
+                    <input type="radio" name="slide" id="img4">
+                    <img src="https://img.freepik.com/free-vector/modern-black-friday-sale-banner-template-with-3d-background-red-splash_1361-1877.jpg?size=626&ext=jpg" class="m1" alt="img1">
+                    <img src="https://img.freepik.com/free-vector/beauty-skin-care-background_52683-728.jpg?size=626&ext=jpg" class="m2" alt="img2">
+                    <img src="https://img.freepik.com/free-vector/sugar-scrub-with-lemon_88138-95.jpg?size=626&ext=jpg" class="m3" alt="img3">
+                    <img src="https://img.freepik.com/free-vector/black-toothpaste-ads-banner-with-brush-tooth_107791-3321.jpg?size=626&ext=jpg" class="m4" alt="img4">
+                </div>
+
+                <div id="dots" class="dots">
+                    <label id="p" for="img1"></label>
+                    <label id="q" for="img2"></label>
+                    <label id="r" for="img3"></label>
+                    <label id="s" for="img4"></label>
+                </div>
+            </div>
+        </div>
+        <div id="content" class="content">
+            <div class="row">
+                <h2>Deals of the Day</h2>
+                <div class="choose">
+                    <div class="boxes"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Biss/2018/QC/med1x._SY116_CB424026091_.jpg" class="selections">
+                        <p>Soaps</p>
+                    </div>
+                    <div class="boxes"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Biss/2021/BAU_GW_Graphics/PCQC/1._SY116_CB643952439_.jpg" class="selections">
+                        <p>Candy</p>
+                    </div>
+                    <div class="boxes"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Biss/2021/BAU_GW_Graphics/PCQC/2._SY116_CB643952439_.jpg" class="selections">
+                        <p>Oil</p>
+                    </div>
+                    <div class="boxes"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Biss/2018/QC/Tools1x._SY116_CB424026090_.jpg" class="selections">
+                        <p>Salt</p>
+                    </div>
+                    <div class="boxes"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/GW/holi22/Artboard_3_1x._SY116_CB626505598_.jpg" class="selections">
+                        <p>Sugar</p>
+                    </div>
+                    <div class="boxes"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Beauty/MegaFashionDays/Feb/GW/QC-PC_01._SY116_CB628322752_.jpg" class="selections">
+                        <p>Spices</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <h2>Top Selections</h2>,
+                <div class="choose">
+                    <div class="boxes"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Beauty/MegaFashionDays/Feb/GW/QC-PC_02._SY116_CB628322752_.jpg" class="selections">
+                        <p>Pens</p>
+                    </div>
+                    <div class="boxes"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Beauty/MegaFashionDays/Feb/GW/QC-PC_03._SY116_CB628322753_.jpg" class="selections">
+                        <p>Notebooks</p>
+                    </div>
+                    <div class="boxes"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Beauty/MegaFashionDays/Feb/GW/QC-PC_04._SY116_CB628322752_.jpg" class="selections">
+                        <p>Soaps</p>
+                    </div>
+                    <div class="boxes"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/Schoolfromhome/PCQC/Pregnancy_Supplements._SY116_CB667651395_.jpg" class="selections">
+                        <p>Gamepads</p>
+                    </div>
+                    <div class="boxes"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/Schoolfromhome/PCQC/Maternity_Skin_care._SY116_CB667651395_.jpg" class="selections">
+                        <p>TV Units</p>
+                    </div>
+                    <div class="boxes"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img2020/img21/apparelGW/WRS_DEC_21/PC/1x/WRS-GW-PC-QC_01._SY116_CB651157265_.jpg" class="selections">
+                        <p>Beds</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <h2>Recommended Items</h2>,
+                <div class="choose">
+                    <div class="boxes"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img2020/img21/apparelGW/WRS_DEC_21/PC/1x/WRS-GW-PC-QC_02._SY116_CB651157265_.jpg" class="selections">
+                        <p>Saree&nbsp;</p>
+                    </div>
+                    <div class="boxes"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img2020/img21/apparelGW/janart22/BTF/PC/MA/1x/Artboard_1_copy_8._SY116_CB647124562_.jpg" class="selections">
+                        <p>Kurtas&nbsp;</p>
+                    </div>
+                    <div class="boxes"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img2020/img21/apparelGW/janart22/BTF/PC/MA/1x/Artboard_1_copy_9._SY116_CB647124562_.jpg" class="selections">
+                        <p>Lowers&nbsp;</p>
+                    </div>
+                    <div class="boxes"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/GWBdaystore/Artboard_2QC2_1x._SY116_CB662999955_.jpg" class="selections">
+                        <p>Skincare</p>
+                    </div>
+                    <div class="boxes"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/GWBdaystore/Artboard_3QC2_1x._SY116_CB662999955_.jpg" class="selections">
+                        <p>Jewellery&nbsp;</p>
+                    </div>
+                    <div class="boxes"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/GWBdaystore/Artboard_1QC2_1x._SY116_CB662999955_.jpg" class="selections">
+                        <p>Grooming&nbsp;</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="row">
+                <h2>Top Picks on Fashion</h2>,
+                <div class="choose">
+                    <div class="boxes"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/GWBdaystore/Artboard_4QC2_1x._SY116_CB662999955_.jpg" class="selections">
+                        <p>&nbsp;Makeup&nbsp;</p>
+                    </div>
+                    <div class="boxes"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/Schoolfromhome/PCQC/Maternity_Sleep__Loungewear._SY116_CB667651395_.jpg" class="selections">
+                        <p>Lehengas</p>
+                    </div>
+                    <div class="boxes"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/Schoolfromhome/PCQC/Maternity_pillows._SY116_CB667651395_.jpg" class="selections">
+                        <p>Sleepwear&nbsp;</p>
+                    </div>
+                    <div class="boxes"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/Schoolfromhome/PCQC/0-6_months._SY116_CB667649399_.jpg" class="selections">
+                        <p>Infant Section&nbsp;</p>
+                    </div>
+                    <div class="boxes"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/Schoolfromhome/PCQC/18-24_months._SY116_CB667649399_.jpg" class="selections">
+                        <p>Kids Wear</p>
+                    </div>
+                    <div class="boxes"><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/GW/HOLI22/PC/QC2/Artboard_1_1x._SY116_CB627909211_.jpg" class="selections">
+                        <p>Consumables</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+
+    <footer id="foot">
+        <div class="one">
+            <p class="name">DISHAA KALRA</p>
+            <p class="info">Email:dishaakalra.18@gmail.com</p>
+        </div>
+        <div class="two">
+            <p class="name">AAYUSH KUMAR</p>
+            <p class="info">Email:eduaayushk@gmail.com</p>
+        </div>
+        <div class="three">
+            <p class="name">KUSHAGRA SHARMA</p>
+            <p class="info">Email:rashmimohit915@gmail.com</p>
+        </div>
+    </footer>
+</body>
+
+</html>

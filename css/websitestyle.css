@@ -1,0 +1,253 @@
+@font-face {
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    height: 200vh;
+}
+
+nav {
+    height: 12vh;
+    background-color: pink;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+
+#logo {
+    width: 200px;
+    height: 200px;
+    background-image: url('../images/default.png');
+    background-size: cover;
+    margin-top: 20px;
+    margin-left: 80px;
+}
+
+#search {
+    width: 700px;
+    height: 40px;
+    margin-top: 10px;
+    background-color: white;
+    color: rgba(128, 128, 128, 0.63);
+    border-radius: 20px;
+    border: none;
+    margin-left: 200px;
+    padding-left: 5px;
+    font-size: 1.2em;
+    font-family: 'Poppins';
+}
+
+#login:hover {
+    box-shadow: 2px 2px 2px 2px rgb(59, 3, 12);
+}
+
+#login {
+    margin-top: 10px;
+    background-color: white;
+    font-size: 1.5em;
+    font-family: 'Poppins';
+    border: none;
+    color: pink;
+    width: 150px;
+    height: 40px;
+    margin-left: 100px;
+}
+
+#cart1 {
+    margin-top: 10px;
+    width: 20px;
+    height: 20px;
+    margin-left: 100px;
+}
+
+#cart2:hover {
+    color: rgba(255, 255, 255, 0.644)
+}
+
+#cart2 {
+    margin-top: 10px;
+    font-size: 1.8em;
+    color: white;
+    margin-left: 10px;
+}
+
+#mode {
+    position: absolute;
+    margin-top: 3vh;
+    margin-left: 5vw;
+    background-color: pink;
+    color: white;
+    font-family: 'Poppins';
+    width: 150px;
+    height: 80px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.5em;
+}
+
+#mode:hover {
+    box-shadow: 5px 5px grey;
+}
+
+.container {
+    margin-top: 20px;
+    background-color: white;
+    border: 5px solid black;
+    box-shadow: 10px 10px rgba(194, 81, 100, 0.801);
+    width: 700px;
+    height: 400px;
+    margin-left: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.images {
+    display: flex;
+    width: 100%;
+}
+
+.images img {
+    width: 600px;
+    height: 350px;
+    transition: all 0.15s ease;
+    padding: 50px;
+    margin-top: 20px;
+}
+
+.images input {
+    display: none;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.dots label {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: pink;
+    border: solid #fff 3px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 5px;
+}
+
+.dots label:hover {
+    background: #fff;
+}
+
+#img1:checked~.m1 {
+    margin-left: 0;
+}
+
+#img2:checked~.m2 {
+    margin-left: -100%;
+}
+
+#img3:checked~.m3 {
+    margin-left: -200%;
+}
+
+#img4:checked~.m4 {
+    margin-left: -300%;
+}
+
+.content {
+    width: 80vw;
+    height: 120vh;
+    margin-left: 10vw;
+    margin-top: 15vh;
+    background-color: rgb(204, 121, 135);
+    box-shadow: 5px 5px grey;
+    display: grid;
+}
+
+.rows {
+    display: flex;
+    justify-content: space-around;
+}
+
+.row h2 {
+    color: white;
+    font-family: 'Poppins';
+    padding-left: 50px;
+    padding-top: 5px;
+}
+
+.row p {
+    color: white;
+    font-family: 'Poppins';
+}
+
+.selections {
+    width: 11.5vw;
+    object-fit: cover;
+    max-height: 14vh;
+    ;
+    margin-right: 2.5vh;
+}
+
+.choose {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 1vw;
+    height: 20vh;
+    scrollbar-width: none;
+    position: relative;
+    left: 2vw;
+}
+
+.selections:hover {
+    transform: scale(1.08);
+}
+
+footer {
+    height: 12vh;
+    background-color: pink;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    margin-top: 15vh;
+}
+
+.name {
+    color: white;
+    font-size: 1.5em;
+    margin: 20px;
+    font-family: 'Poppins';
+}
+
+.info {
+    color: white;
+    margin: 20px;
+    font-family: 'Poppins';
+}
+
+.one {
+    margin-left: 80px;
+}
+
+.two,
+.three {
+    margin-left: 350px;
+}
